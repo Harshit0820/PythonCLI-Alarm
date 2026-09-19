@@ -1,0 +1,18 @@
+[project]
+name = "pocket-alarm"
+version = "1.0.0"
+description = "A terminal alarm clock with JSON persistence"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+pocket-alarm = "pocket_alarm.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pocket_alarm*"]
